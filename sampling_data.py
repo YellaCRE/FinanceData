@@ -30,3 +30,4 @@ print(Y_Cnt)
 result = pd.concat([Y_res, X_res], axis=1)
 print(result)
 result.to_csv("sampling.csv")
+
