@@ -18,7 +18,7 @@ df_Y = df.loc[:, Y_list]
 print(f'Original dataset shape {df_X.shape}')
 
 # SmoteNC 적용
-df_indx = [0, 91]
+df_indx = [0, 91] # 이부분 하드코딩이니까 
 sm = SMOTENC(categorical_features=df_indx, random_state=42)
 X_res, Y_res = sm.fit_resample(df_X, df_Y)
 
