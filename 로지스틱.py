@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, recall_score
 import imblearn
 
 # 데이터 불러오기
-data = pd.read_csv("C:/Users/HCJ/Desktop/2021_Summer/Finance_data/bank.csv")
+data = pd.read_csv("C:/Users/HCJ/Desktop/2021_Summer/Finance_data/bank.csv") # 드라이브 주소로 수정 
 data = data.drop(['Unnamed: 0'], axis=1)
 
 #
