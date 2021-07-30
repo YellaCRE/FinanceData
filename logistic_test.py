@@ -38,22 +38,4 @@ y_pred = model.predict(x_test)
 accuracy = metrics.accuracy_score(y_test, y_pred)
 score = metrics.precision_recall_fscore_support(y_test, y_pred)
 
-print("Accuracy : ", accuracy, "Precision, Recall, Fscore : " score)
-
-x_train, x_test, y_train, y_test = train_test_split(fin_samp_X, fin_samp_Y, train_size=0.8, test_size=0.2)
-
-# 모델 형성 및 검증
-log = LogisticRegression()
-log.fit(x_train, y_train)
-
-print('\n', "Sampling R2 : ", log.score(x_train, y_train))
-
-
-log.fit(x_train, y_train)
-y_pred = log.predict(x_test)
-R = log.score(x_test, y_test)
-
-accuracy = metrics.accuracy_score(y_test, y_pred)
-score = metrics.precision_recall_fscore_support(y_test, y_pred)
-
-print(accuracy, score)
+print("Accuracy : ", accuracy, "\n + Precision, Recall, Fscore : " score)
