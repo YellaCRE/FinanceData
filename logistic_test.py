@@ -38,4 +38,4 @@ y_pred = model.predict(x_test)
 accuracy = metrics.accuracy_score(y_test, y_pred)
 score = metrics.precision_recall_fscore_support(y_test, y_pred)
 
-print("Accuracy : ", accuracy, "\n + Precision, Recall, Fscore : " score)
+print("Accuracy : ", accuracy, "\n"+"Precision, Recall, Fscore : " score)
